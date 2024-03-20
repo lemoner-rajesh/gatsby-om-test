@@ -2,10 +2,6 @@ import * as React from "react"
 import { useEffect } from "react"
 import { Link } from "gatsby"
 import translation from "../assets/LangConfig/translation.json"
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import { ThemeProvider } from "@emotion/react";
-import { themeConfig } from "../utils/theme";
 
 const pageStyles = {
   color: "#232129",
@@ -35,17 +31,8 @@ const NotFoundPage = (props) => {
   console.log(props)
   const lang = props.lang
   return (
-    <ThemeProvider theme={themeConfig}>
       <main style={pageStyles}>
         <h1 style={headingStyles}>{translation.not_found[lang]}</h1>
-
-        <Stack spacing={2} direction="row">
-          <Button variant="text">Text</Button>
-          <Button variant="contained">Contained</Button>
-          <Button variant="outlined">Outlined</Button>
-          <Button color="secondary" variant="outlined">Secondary</Button>
-        </Stack>
-
         <p style={paragraphStyles}>
           Sorry 😔, we couldn’t find what you were looking for.
           <br />
@@ -60,7 +47,6 @@ const NotFoundPage = (props) => {
           <Link to="/">{translation.go_to_home[lang]}</Link>.
         </p>
       </main>
-    </ThemeProvider>
   )
 }
 
