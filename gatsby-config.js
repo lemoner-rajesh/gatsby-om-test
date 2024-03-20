@@ -3,8 +3,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `gatsby-om-test`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `renewal policy`,
+    siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [],
-}
+  plugins: [ "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    resolve: 'gatsby-source-filesystem',
+    
+    options: {
+      "name": "images",
+      "path": "./src/assets/images/"
+    },
+    __key: "images"
+  }]
+};

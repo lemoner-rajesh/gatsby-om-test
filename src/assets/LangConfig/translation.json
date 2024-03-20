@@ -1,0 +1,25 @@
+{
+    "go_to_payment": {
+    "en": "Go To Payment",
+    "ar": "استفسار"
+    },
+    "payyment_page": {
+        "en": "This is Payment page",
+        "ar": "استفساراستفساراستفسار "
+    },
+    "creating_page":{
+       "en":" Try creating a page in",
+       "ar":"حاول إنشاء صفحة في"
+    },
+    "not_found":{
+        "en":"Page not found",
+        "ar":"الصفحة غير موجودة"
+    },
+    "go_to_home":{
+        "en":"Go home",
+        "ar":"اذهب للمنزل"
+    }
+    
+}
+
+
